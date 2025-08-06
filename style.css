@@ -1,0 +1,60 @@
+@charset "utf-8"
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+img {
+  width: 300px;
+}
+
+div {
+  margin-bottom:200px;
+  margin-left:200px;
+  height:100px;
+  background-color:#000;
+  color:cadetblue;
+
+}
+
+p{
+  color:red;
+  background-image:url(./assets/bokujou.jpeg);
+  background-repeat:no-repeat;
+  font-weight:bold;
+  line-height:30;
+  text-indent:10em;
+  width:calc(100%-300px);
+
+}
+/* id がシャープ # */
+#text{
+  color:chartreuse;
+}
+/* class がドット. */
+.text{
+  color:coral;
+}
+/* 疑似クラスセレクタ */
+a:hover{
+  color:red;
+}
+
+#twitter-button{
+  background-color:#1DA1F2;
+  color:white;
+
+  padding:10px;
+  text-decoration:none;
+  display:inline-block;
+  border-radius:10px;
+}
+
+#twitter-button:hover{
+  background-color: #0d8bd9;
+}

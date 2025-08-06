@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>演習2：画像とリンクの配置</title>
+  <style>
+    /* ページ全体の基本設定 */
+    body {
+      font-family: 'メイリオ', 'Meiryo', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    
+    /* コンテナ（中央寄せ用） */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    /* 見出しのスタイル */
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 3px solid #1DA1F2;
+    }
+    
+    /* セクションの見出し */
+    h2 {
+      color: #555;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    
+    /* 画像ギャラリーセクション */
+    .image-gallery {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    /* 画像のスタイル */
+    .gallery-image {
+      width: 220px;
+      height: 165px;
+      margin: 10px;
+      border: 3px solid #ddd;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    
+    /* 画像にマウスを乗せた時の効果 */
+    .gallery-image:hover {
+      transform: scale(1.05);
+      border-color: #1DA1F2;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    /* ソーシャルリンクセクション */
+    .social-links {
+      text-align: center;
+      margin-top: 40px;
+    }
+    
+    /* Twitterボタンの基本スタイル */
+    .twitter-button {
+      background-color: #1DA1F2;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 5px rgba(29, 161, 242, 0.3);
+    }
+    
+    /* Twitterボタンにマウスを乗せた時 */
+    .twitter-button:hover {
+      background-color: #0d8bd9;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(29, 161, 242, 0.4);
+    }
+    
+    /* その他のソーシャルボタン例 */
+    .github-button {
+      background-color: #333;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    .github-button:hover {
+      background-color: #555;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    /* 説明文のスタイル */
+    .description {
+      color: #666;
+      line-height: 1.6;
+      margin: 20px 0;
+    }
+    
+    /* コードブロックのスタイル */
+    .code-block {
+      background-color: #f4f4f4;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 15px;
+      margin: 20px 0;
+      font-family: 'Courier New', monospace;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>演習2：画像とリンクを複数配置</h1>
+    
+    <p class="description">
+      このページは、HTML/CSS初学者向けの演習課題の完成例です。<br>
+      画像を3枚並べて、Twitterリンクをボタン風にスタイリングしています。
+    </p>
+    
+    <h2>画像ギャラリー</h2>
+    <div class="image-gallery">
+      <!-- プレースホルダー画像を使用（実際の画像に置き換え可能） -->
+      <img src="https://via.placeholder.com/220x165/FF6B6B/FFFFFF?text=画像1" 
+           alt="サンプル画像1" 
+           class="gallery-image">
+      <img src="https://via.placeholder.com/220x165/4ECDC4/FFFFFF?text=画像2" 
+           alt="サンプル画像2" 
+           class="gallery-image">
+      <img src="https://via.placeholder.com/220x165/45B7D1/FFFFFF?text=画像3" 
+           alt="サンプル画像3" 
+           class="gallery-image">
+    </div>
+    
+    <h2>ソーシャルリンク</h2>
+    <div class="social-links">
+      <a href="https://twitter.com" class="twitter-button" target="_blank">
+        Twitterでフォロー
+      </a>
+      <a href="https://github.com" class="github-button" target="_blank">
+        GitHubで見る
+      </a>
+    </div>
+    
+    <h2>使用したCSSのポイント</h2>
+    <div class="code-block">
+      /* 画像のスタイル */<br>
+      .gallery-image {<br>
+      &nbsp;&nbsp;width: 220px;<br>
+      &nbsp;&nbsp;height: 165px;<br>
+      &nbsp;&nbsp;margin: 10px;<br>
+      &nbsp;&nbsp;border: 3px solid #ddd;<br>
+      }<br><br>
+      
+      /* ボタンのスタイル */<br>
+      .twitter-button {<br>
+      &nbsp;&nbsp;background-color: #1DA1F2;<br>
+      &nbsp;&nbsp;color: white;<br>
+      &nbsp;&nbsp;padding: 12px 30px;<br>
+      &nbsp;&nbsp;border-radius: 25px;<br>
+      }
+    </div>
+    
+    <p class="description">
+      <strong>学習のヒント：</strong><br>
+      • 画像のサイズは width と height で指定<br>
+      • margin で要素間の余白を調整<br>
+      • padding でボタン内部の余白を調整<br>
+      • :hover で マウスオーバー時の効果を追加<br>
+      • transition でアニメーション効果を滑らかに
+    </p>
+  </div>
+</body>
+</html>
